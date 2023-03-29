@@ -41,11 +41,11 @@ public:
 };
 
 int main(){
-  persen* herbert = new persen(15, "USA","herbert",1);
-  persen* anna = new persen(12, "russ", "anna", 0);
+  persen* herbert = new persen(20, "USA","herbert",1);
+  persen* anna = new persen(30, "russ", "anna", 0);
   cout << herbert->name<<"\t";
   cout << anna->vozrast << "\t";
-  anna->addvozrast(12);
+  anna->addvozrast(20);
   cout << anna->vozrast<<"\t";
   herbert->smenapola();
   cout << herbert->pol<<"\t";
