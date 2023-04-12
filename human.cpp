@@ -26,16 +26,16 @@ public:
     void smenapola() {
         this->pol = !pol;
         if (pol == 1)
-            cout << "man";
+            cout << "man" << std::endl;
         if (pol == 0)
-            cout << "woman";
+            cout << "woman" << std::endl;
     }
     void say(persen* people) {
-        cout << this->name << " Hi! " << people->name << "\t";
+        cout << this->name << " Hi! " << people->name << "\n";
     }
     ~persen() {
 
-        cout << "hello";
+        cout << "hello ";
     }
 
 };
@@ -48,7 +48,6 @@ int main() {
     anna->addage(30);
     cout << anna->vozrast << "\n";
     herbert->smenapola();
-    cout << herbert->pol << "\n";
     herbert->say(herbert);
     delete(anna);
     cout << anna->name << "\n";
