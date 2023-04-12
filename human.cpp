@@ -48,7 +48,7 @@ int main() {
     anna->addage(30);
     cout << anna->vozrast << "\n";
     herbert->smenapola();
-    herbert->say(herbert);
+    herbert->say(anna);
     delete(anna);
     cout << anna->name << "\n";
 }
