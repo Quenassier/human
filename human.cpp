@@ -7,20 +7,20 @@ using namespace std;
 
 class persen {
 public:
-    int age;
+    int vozrast;
     std::string national, name;
     bool pol;
 
-    persen(int age, std::string national, std::string name, bool pol) {
-        this->age = age;
+    persen(int vozrast, std::string national, std::string name, bool pol) {
+        this->vozrast = vozrast;
         this->national = national;
         this->name = name;
         this->pol = pol;
 
 
     }
-    void addage(int age) {
-        this->age += age;
+    void addage(int vozrast) {
+        this->vozrast += vozrast;
 
     }
     void smenapola() {
@@ -35,7 +35,7 @@ public:
     }
     ~persen() {
 
-        cout << "i delet";
+        cout << "hello";
     }
 
 };
@@ -43,13 +43,13 @@ public:
 int main() {
     persen* herbert = new persen(20, "USA", "herbert", 1);
     persen* anna = new persen(30, "russ", "anna", 0);
-    cout << herbert->name << "\t";
-    cout << anna->vozrast << "\t";
-    anna->addvozrast(30);
-    cout << anna->vozrast << "\t";
+    cout << herbert->name << "\n";
+    cout << anna->vozrast << "\n";
+    anna->addage(30);
+    cout << anna->vozrast << "\n";
     herbert->smenapola();
-    cout << herbert->pol << "\t";
+    cout << herbert->pol << "\n";
     herbert->say(herbert);
     delete(anna);
-    cout << anna->name << "\t";
+    cout << anna->name << "\n";
 }
